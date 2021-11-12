@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: false
+  tasks:
+    - apt:
+        pkg:
+          - docker.io
+          - python-pip3
+        state: present
